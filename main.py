@@ -27,6 +27,7 @@ def main():
                 run = False
             else:
                 pygame.Surface.fill(screen, (0, 0, 0))
+                player.update(dt)
                 player.draw(screen=screen)
                 pygame.display.flip()
 
